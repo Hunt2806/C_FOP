@@ -11,6 +11,7 @@ int main() {
     printf("\n Addition (1) \n");
     printf(" Subtraction (2) \n");
     printf(" Multiplication (3) \n");
+    printf(" Division (4) \n");
 
     printf("Enter your choice");
     scanf(" %d", &ch);
@@ -25,7 +26,15 @@ int main() {
         break;
     case 3:
         printf("Result = %d", a*b);
-        break;           
+        break; 
+    case 4: 
+        if (b == 0)
+          printf("Can't divide by 0")
+          else
+          {
+            printf("Result = %d", a/b);
+          }
+        break;
     default:
         printf("Invalid Choice");
     }
