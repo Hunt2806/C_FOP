@@ -1,22 +1,23 @@
 #include <stdio.h>
 #include <math.h>
-#include <string.h>
 
-void main() {
-  int num;
-  int num1;
-  printf("Enter a number");
-  scanf("%d", &num);
-  num = num1;
-  char str[20];
-  sprintf(str, "%d", num1);
-  sum = 0;
-  length = strlen(num1);
-  while(num!=0){
-  for(i=0,i<length,i++)
-      digit = num % 10;
-      sum = sum + (digit * pow(2,i));
-      num = num/10;
-  }
-  printf("The decimal number is, %d", sum);
+int main() {
+    int num, original, remainder, i = 0;
+    int decimal = 0;
+
+    printf("Enter a binary number: ");
+    scanf("%d", &num);
+
+    original = num;
+
+    while (num != 0) {
+        remainder = num % 10;
+        decimal += remainder * pow(2, i);
+        num = num / 10;
+        i++;
+    }
+
+    printf("The decimal number is: %d\n", decimal);
+
+    return 0;
 }
