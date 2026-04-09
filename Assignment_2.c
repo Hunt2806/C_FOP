@@ -29,8 +29,8 @@ int main() {
         break; 
     case 4: 
         if (b == 0)
-          printf("Can't divide by 0")
-          else
+          printf("Can't divide by 0");
+        else
           {
             printf("Result = %d", a/b);
           }
