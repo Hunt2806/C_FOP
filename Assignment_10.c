@@ -29,7 +29,7 @@ int main(){
 
   case '/':
   if (num2 == 0)
-  printf("Can't divide by 0")
+  printf("Can't divide by 0");
   else
   {
     result = num1 / num2;
@@ -43,7 +43,18 @@ break;
   break;
 
   case '!':
-  if(num1
-  result = num1 * num2;
-  printf("%d is the result", result);
+  if(num1 < 0)
+    printf("Factorial is not defined for negative numbers");
+  else if(num1 == 0 || num1 == 1)
+    printf("Factorial of %d is 1", (int)num1);
+  else
+  {
+    result = 1;
+    for(int i = 2; i <= num1; i++)
+      result *= i;
+    printf("Factorial of %d is %d", (int)num1, (int)result);
+  }
   break;
+  }
+return 0;
+}

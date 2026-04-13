@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int scd_calc (int num1, int num2) {
-    int is_scd_found = 0
+    int is_scd_found = 0;
     int min_value = (num1 < num2) ? num1 : num2;
     int scd = 2;
     while (scd <= min_value) {

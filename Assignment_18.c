@@ -21,10 +21,10 @@ int main() {
     char str2[100];
     printf("Enter another string to compare: ");
     scanf("%s", str2);
-    int isEqual = 1; // Assume strings are equal
+    int isEqual = 1; 
     for (int i = 0; i < length; i++) {
         if (str[i] != str2[i]) {
-            isEqual = 0; // Strings are not equal
+            isEqual = 0; 
             break;
         }
     }
@@ -34,10 +34,10 @@ int main() {
         printf("The strings are not equal.\n");
     }
 
-    int isPalindrome = 1; // Assume string is a palindrome
+    int isPalindrome = 1; 
     for (int i = 0; i < length / 2; i++) {
         if (str[i] != str[length - i - 1]) {
-            isPalindrome = 0; // String is not a palindrome
+            isPalindrome = 0; 
             break;
         }
     }
@@ -54,7 +54,7 @@ int main() {
     while (substring[subLength] != '\0') {
         subLength++;
     }
-    int found = 0; // Assume substring is not found
+    int found = 0; 
     for (int i = 0; i <= length - subLength; i++) {
         int j;
         for (j = 0; j < subLength; j++) {
@@ -63,7 +63,7 @@ int main() {
             }
 
         }        if (j == subLength) {
-            found = 1; // Substring found
+            found = 1; 
             break;
         }
     }
